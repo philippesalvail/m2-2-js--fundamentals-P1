@@ -17,5 +17,5 @@ const myArray = [
   "program",
   "funky",
 ];
-console.log(itemIsPresent(myArray, "fUnKy"));
+console.log(itemIsPresent(myArray, "funKy"));
 console.log(itemIsPresent(myArray, "elephant"));
