@@ -15,4 +15,12 @@ let armstrongNumbers = [];
 
 // write your loop here...
 
+for (i = 100; i < 1000; i++) {
+  let num = i.toString().split("");
+  let evaluatedNum =
+    Math.pow(num[0], 3) + Math.pow(num[1], 3) + Math.pow(num[2], 3);
+  if (evaluatedNum === i) {
+    armstrongNumbers.push(evaluatedNum);
+  }
+}
 console.log(armstrongNumbers);

@@ -15,6 +15,12 @@
 // HINT: Check the `Math` built-in object.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
-function calculateAverage(grades) {}
+function calculateAverage(grades) {
+  return Math.round(
+    grades.reduce(function (total, item) {
+      return total + item;
+    }) / grades.length
+  );
+}
 
 console.log(calculateAverage([76, 60, 83, 100, 78]));

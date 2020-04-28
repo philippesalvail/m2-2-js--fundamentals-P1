@@ -10,10 +10,22 @@
 
 // Write function here
 
-
- 
-// Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
-
-// Try with other values as well
-
-
+function calculateAverage(grades) {
+  let score = Math.round(
+    grades.reduce(function (total, item) {
+      return total + item;
+    }) / grades.length
+  );
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+console.log(calculateAverage([48, 95, 65, 48, 59, 78, 72, 65]));
